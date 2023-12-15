@@ -8,33 +8,107 @@
   </head>
   <body>
     <section class="section-promo">
-      <p>Grandes ofertas en comedores</p>
+      <p>Grandes ofertas en comederos</p>
       <p class="language">Español</p>
       <p>ARG$</p>
     </section>
     <header class="header">
-      <figure>
-        <img src="logo" alt="Logo" />
-        <figcaption>Logo</figcaption>
-      </figure>
+      <p id="cat-dog"><img src="./img/Cat.svg" alt="Cat"><span class="cat-dog">Front</span> Cat&Dog <img src="./img/Dog.svg" alt="Dog"></p>
       <nav class="top-nav">
         <ul>
-          <li><a href="http://">Categorias</a></li>
-          <li><a href="http://">Pets</a></li>
-          <li><a href="http://">Nosotros</a></li>
-          <li><a href="http://">Contactanos</a></li>
+          <li><img src="./img/pawprint_2.svg" alt="paw-print"><a href="http://">Categorias</a></li>
+          <li><img src="./img/pawprint_2.svg" alt="paw-print"><a href="http://">Pets</a></li>
+          <li><img src="./img/pawprint_2.svg" alt="paw-print"><a href="http://">Nosotros</a></li>
+          <li><img src="./img/pawprint_2.svg" alt="paw-print"><a href="http://">Contactanos</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article class="main-article">
-        <h2>!Es un placer tenerte aquí!</h2>
-        <p>!Comederos en descuento!</p>
-        <a href="http://">Comederos</a>
+        <div class="div-main-article">
+          <div class="subtitle">
+            <h2>!Es un placer tenerte aquí!</h2>
+            <p>!Comederos en descuento!</p>
+          </div>
+          
+          <a id="article-a" class="article-a" href="http://">Comederos</a>
+        </div>
       </article>
       <section class="featured-products">
-        <img src="emoji-" alt="emoji-product" />
+        <img src="./img/pawprint.svg" alt="emoji-pet" />
+        <h1>Productos Destacados</h1>
+        <nav>
+          <ul>
+            <li><a href="http://">Comederos</a></li>
+            <li><a href="http://">Accesorios</a></li>
+            <li><a href="http://">Comida</a></li>
+          </ul>
+        </nav>
+        <section class="cards">
+          <article class="product product-1">
+            <figure>
+              <img src="churrasco" alt="churrasco">
+            </figure>
+            <h3>Juguete Churrasquito</h3>
+            <p>$150</p>
+          </article>
+          <article class="product product-2">
+            <figure>
+              <img src="dog-dish" alt="dog-dish">
+            </figure>
+            <h3>Comedero para perro</h3>
+            <p>$250</p>
+          </article class="product product-3">
+          <article>
+            <figure>
+              <img src="dog-bone" alt="dog-bone">
+            </figure>
+            <h3>Juguete Huesito</h3>
+            <p>$650</p>
+          </article>
+        </section>
+      </section>
+      <section class="section-contact">
+        <form action="" method="post">
+          <h3>Contáctanos</h3>
+          <input type="text" name="fullname" id="fullname" placeholder="Nombre y Apellido" required>
+          <input type="email" name="email" id="email" placeholder="Ingrese correo electrónico" required>
+          <input type="phone" name="phone" id="phone" placeholder="Teléfono" required>
+          <button id="btn-reset" class="btn-form reset">Resetear</button>
+          <input id="in-send" name="in-send" type="submit" value="Enviar">
+        </form>
+      </section>
+      <section class="sec-news">
+        <img src="mail" alt="mail-img">
+        <h4>Suscríbete para más novedades</h4>
+        <form action="">
+          <input type="email" name="news-email" id="news-email" placeholder="Ingresa tu correo electrónico" required>
+          <input type="submit" value="Suscribirme">
+        </form>
+      </section>
+      <section class="information">
+        <div class="topics">
+          <div class="topic">
+            <img src="local" alt="local">
+            <h4>Localidad</h4>
+            <p>Calle - provincia</p>
+          </div>
+          <div class="topic">
+            <img src="tel" alt="tel">
+            <h4>Teléfono</h4>
+            <p>Número de teléfono</p>
+          </div>
+          <div class="topic">
+            <img src="email" alt="email">
+            <h4>Correo electrónico</h4>
+            <p>Dirección de correo.</p>
+          </div>
+        </div>
+        <div class="logo-bottom">
+          <p id="bottom-cat-dog"><img src="./img/Cat.svg" alt="Cat"><span class="btm-cat-dog">Front</span> Cat&Dog <img src="./img/Dog.svg" alt="Dog"></p>
+        </div>
       </section>
     </main>
+    <footer>Todos los derechos reservados Front End</footer>
   </body>
 </html>

@@ -1,20 +1,98 @@
+/* $fondo-btn-sign: #03faee;
+$fondo-article: #f9f9f8;
+$primer-parrafo: #8b8fa5; */
+/* Agregados por mi*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
 }
 body .section-promo {
+  background-color: #222222;
+  color: #F3F3F3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 body .section-promo p:first-child {
-  align-items: flex-start;
+  align-items: center;
 }
 
 header {
+  align-items: center;
   background-color: #f0a83e;
-  height: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  height: 6.2rem;
+  padding: 2rem 0;
   width: 100%;
+}
+header #cat-dog {
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header #cat-dog img {
+  display: block;
+}
+header #cat-dog span {
+  color: #3C2313;
+}
+header .top-nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .top-nav > ul li {
+  list-style-type: none;
+  padding-right: 2rem;
+}
+header .top-nav > ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .top-nav > ul li a:link, header .top-nav > ul li a:visited {
+  color: #FFFFFF;
+}
+
+main .main-article {
+  align-items: center;
+  background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 410px;
+}
+main .main-article .div-main-article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main-article .div-main-article .subtitle h2 {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+main .main-article .div-main-article .subtitle p {
+  padding: 1rem 0;
+  text-align: center;
+}
+main .main-article .div-main-article .article-a {
+  background-color: #f0a83e;
+  color: #FFFFFF;
+  padding: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
