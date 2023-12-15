@@ -1,8 +1,24 @@
-$html-font-size:62.5%;
-$fondo-btn-sign:#03faee;
-$fondo-article:#f9f9f8;
-$primer-parrafo:#8b8fa5;
+$html-font-size: 62.5%;
+$fondo-btn-sign: #03faee;
+$fondo-article: #f9f9f8;
+$primer-parrafo: #8b8fa5;
+$bgc-header: #f0a83e;
 
-html{
-    font-size: $html-font-size;
+html {
+  font-size: $html-font-size;
+}
+body {
+  font-size: 1.8rem;
+  .section-promo {
+    display: flex;
+    justify-content: flex-end;
+    p:first-child {
+      align-items: flex-start;
+    }
+  }
+}
+header {
+  background-color: $bgc-header;
+  height: 6rem;
+  width: 100%;
 }

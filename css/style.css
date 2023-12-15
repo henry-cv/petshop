@@ -1,3 +1,20 @@
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+body .section-promo {
+  display: flex;
+  justify-content: flex-end;
+}
+body .section-promo p:first-child {
+  align-items: flex-start;
+}
+
+header {
+  background-color: #f0a83e;
+  height: 6rem;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
