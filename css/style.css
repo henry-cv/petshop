@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* En este caso a partir de un diseño Mobile First */
 /* $fondo-btn-sign: #03faee;
 $fondo-article: #f9f9f8;
 $primer-parrafo: #8b8fa5; */
@@ -13,14 +16,15 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 1.8rem;
 }
 body .section-promo {
   background-color: #222222;
-  color: #F3F3F3;
+  color: #f3f3f3;
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 1rem;
 }
 body .section-promo p:first-child {
   align-items: center;
@@ -37,7 +41,7 @@ header {
 }
 header #cat-dog {
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -47,7 +51,7 @@ header #cat-dog img {
   display: block;
 }
 header #cat-dog span {
-  color: #3C2313;
+  color: #3c2313;
 }
 header .top-nav > ul {
   display: flex;
@@ -58,21 +62,26 @@ header .top-nav > ul li {
   padding-right: 2rem;
 }
 header .top-nav > ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
-header .top-nav > ul li a:link, header .top-nav > ul li a:visited {
-  color: #FFFFFF;
+header .top-nav > ul li a:link,
+header .top-nav > ul li a:visited {
+  color: #ffffff;
 }
 
+main {
+  width: 100%;
+}
 main .main-article {
   align-items: center;
   background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
-  height: 410px;
+  height: 41rem;
+  width: 100%;
 }
 main .main-article .div-main-article {
   align-items: center;
@@ -91,7 +100,7 @@ main .main-article .div-main-article .subtitle p {
 }
 main .main-article .div-main-article .article-a {
   background-color: #f0a83e;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;

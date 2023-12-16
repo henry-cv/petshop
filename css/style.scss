@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* En este caso a partir de un diseño Mobile First */
 $html-font-size: 62.5%;
 /* $fondo-btn-sign: #03faee;
 $fondo-article: #f9f9f8;
@@ -5,13 +7,13 @@ $primer-parrafo: #8b8fa5; */
 
 /* Agregados por mi*/
 $bgc-header: #f0a83e;
-$bgc-btn-reset:#8A8787;
-$bgc-btn-suscribe:#3C2313;
-$bgc-section-info:#3C2313;
-$black-bg-par:#222222;
-$text-c-par:#F3F3F3;
-$text-c-header: #FFFFFF;
-*{
+$bgc-btn-reset: #8a8787;
+$bgc-btn-suscribe: #3c2313;
+$bgc-section-info: #3c2313;
+$black-bg-par: #222222;
+$text-c-par: #f3f3f3;
+$text-c-header: #ffffff;
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,16 +22,17 @@ html {
   font-size: $html-font-size;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 1.8rem;
   .section-promo {
     background-color: $black-bg-par;
-    color:$text-c-par;
+    color: $text-c-par;
     display: flex;
     justify-content: space-between;
     p:first-child {
-        align-items: center;    
+      align-items: center;
     }
+    padding: 1.5rem 1rem;
   }
 }
 header {
@@ -40,70 +43,72 @@ header {
   height: 6.2rem;
   padding: 2rem 0;
   width: 100%;
-  #cat-dog{
+  #cat-dog {
     align-items: center;
-    color:$text-c-header;
+    color: $text-c-header;
     display: flex;
     justify-content: center;
     font-size: 2rem;
     font-weight: bold;
-    img{
+    img {
       display: block;
     }
-    span{
-      color:$bgc-section-info;      
+    span {
+      color: $bgc-section-info;
     }
   }
-  .top-nav>ul{
+  .top-nav > ul {
     display: flex;
     justify-content: space-between;
-    li{
+    li {
       list-style-type: none;
-      padding-right:2rem;
-      a{
-        color:$text-c-header;
+      padding-right: 2rem;
+      a {
+        color: $text-c-header;
         text-decoration: none;
       }
-      a:link, a:visited{
-        color:$text-c-header;
+      a:link,
+      a:visited {
+        color: $text-c-header;
       }
     }
   }
 }
-main{
-  .main-article{
+main {
+  .main-article {
     align-items: center;
     background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     display: flex;
     justify-content: flex-end;
-    height: 410px;
-    .div-main-article{
+    height: 41rem;
+    width: 100%;
+    .div-main-article {
       align-items: center;
       display: flex;
-      flex-direction: column;      
+      flex-direction: column;
       justify-content: center;
-     
-      .subtitle{
-        h2{
+
+      .subtitle {
+        h2 {
           background-color: #fff;
           border-radius: 1rem;
-          padding: 2rem 1.5rem;          
+          padding: 2rem 1.5rem;
         }
-        p{
-          padding:1rem 0;
+        p {
+          padding: 1rem 0;
           text-align: center;
         }
       }
-      .article-a{        
+      .article-a {
         background-color: $bgc-header;
-        color:$text-c-header;                
+        color: $text-c-header;
         padding: 1.6rem;
-        text-decoration: none;  
-        text-transform: uppercase;    
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
-    
   }
+  width: 100%;
 }
