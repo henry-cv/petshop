@@ -13,9 +13,9 @@ $bgc-section-info: #3c2313;
 $black-bg-par: #222222;
 $text-c-par: #f3f3f3;
 $text-c-header: #ffffff;
-$main-title-color: #3C2313;
-$cat-dog-footer-color:#F0A83E;
-$anchor-featured:#666666;
+$main-title-color: #3c2313;
+$cat-dog-footer-color: #f0a83e;
+$anchor-featured: #666666;
 
 * {
   box-sizing: border-box;
@@ -26,6 +26,7 @@ html {
   font-size: $html-font-size;
 }
 body {
+  color: $text-c-header;
   font-family: "Roboto";
   font-size: 1.8rem;
   .section-promo {
@@ -114,81 +115,139 @@ main {
       }
     }
   }
-  .featured-products{
+  .featured-products {
     align-items: center;
     display: flex;
     flex-direction: column;
-    h1{
-      color:$bgc-btn-suscribe;
-      font-size:4rem;
+    h1 {
+      color: $bgc-btn-suscribe;
+      font-size: 4rem;
     }
-    margin-top:2rem;
-    nav>ul{
+    margin-top: 2rem;
+    nav > ul {
       align-items: center;
       display: flex;
       justify-content: space-around;
-      li{
+      li {
         list-style-type: none;
-        padding-right: 1rem;    
-        a{
+        padding-right: 1rem;
+        a {
           text-decoration: none;
         }
-        a:link,a:visited{
-          color:$anchor-featured;
-
+        a:link,
+        a:visited {
+          color: $anchor-featured;
         }
       }
     }
-    .cards{
+    .cards {
       align-items: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 3rem;
       text-align: center;
-      .product{
-        p{
-          color:$cat-dog-footer-color;
+      .product {
+        p {
+          color: $cat-dog-footer-color;
         }
       }
     }
-    
   }
   width: 100%;
-  .section-contact{
+  .section-contact {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     margin-top: 5rem;
   }
-  .section-contact>form{
-    align-items: center;
+  .section-contact > form {
+    align-items: stretch;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     height: 26rem;
     justify-content: center;
     row-gap: 1rem;
-    h3{
-      color:$bgc-btn-suscribe;
+    h3 {
+      color: $bgc-btn-suscribe;
       margin: 2rem auto;
     }
-    input{
+    input {
       background-color: $bgc-btn-suscribe;
+      padding: 0.8rem 1rem;
+    }
+    input,
+    button {
       border-radius: 1rem;
       color: $text-c-header;
-      padding: 0.6rem;
     }
-    ::placeholder{
-      color:$text-c-header;
+    ::placeholder {
+      color: $text-c-header;
     }
-    .buttons{
+    .buttons {
+      align-self: center;
       display: flex;
       border-radius: 2rem;
       justify-content: space-between;
-      #btn-reset{
+      column-gap: 1rem;
+      margin-top: 2rem;
+      #btn-reset {
         background-color: $bgc-btn-reset;
+        padding: 0.8rem 1rem;
+      }
+      #in-send {
+        background-color: $bgc-header;
       }
     }
     width: 34rem;
+  }
+  .sec-news {
+    align-items: center;
+    background-color: $bgc-header;
+    color: $text-c-header;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    h4 {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+    form > input {
+      border-radius: 1rem;
+      padding: 0.8rem 1rem;
+    }
+    input[type="submit"] {
+      background-color: $bgc-btn-suscribe;
+      color: $text-c-header;
+    }
+  }
+  .information {
+    align-items: center;
+    background-color: $bgc-btn-suscribe;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    .topics {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      .topic {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+        -moz-column-gap: 1.5rem;
+        .info-item {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          row-gap: 1rem;
+        }
+      }
+    }
   }
 }
