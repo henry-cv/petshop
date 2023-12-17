@@ -151,6 +151,44 @@ main {
         }
       }
     }
+    
   }
   width: 100%;
+  .section-contact{
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 5rem;
+  }
+  .section-contact>form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    height: 26rem;
+    justify-content: center;
+    row-gap: 1rem;
+    h3{
+      color:$bgc-btn-suscribe;
+      margin: 2rem auto;
+    }
+    input{
+      background-color: $bgc-btn-suscribe;
+      border-radius: 1rem;
+      color: $text-c-header;
+      padding: 0.6rem;
+    }
+    ::placeholder{
+      color:$text-c-header;
+    }
+    .buttons{
+      display: flex;
+      border-radius: 2rem;
+      justify-content: space-between;
+      #btn-reset{
+        background-color: $bgc-btn-reset;
+      }
+    }
+    width: 34rem;
+  }
 }

@@ -140,4 +140,44 @@ main .featured-products .cards {
 }
 main .featured-products .cards .product p {
   color: #F0A83E;
+}
+main .section-contact {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 5rem;
+}
+main .section-contact > form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 34rem;
+}
+main .section-contact > form h3 {
+  color: #3c2313;
+  margin: 2rem auto;
+}
+main .section-contact > form input {
+  background-color: #3c2313;
+  border-radius: 1rem;
+  color: #ffffff;
+  padding: 0.6rem;
+}
+main .section-contact > form ::-moz-placeholder {
+  color: #ffffff;
+}
+main .section-contact > form ::placeholder {
+  color: #ffffff;
+}
+main .section-contact > form .buttons {
+  display: flex;
+  border-radius: 2rem;
+  justify-content: space-between;
+}
+main .section-contact > form .buttons #btn-reset {
+  background-color: #8a8787;
 }/*# sourceMappingURL=style.css.map */
