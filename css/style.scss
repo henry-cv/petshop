@@ -13,6 +13,10 @@ $bgc-section-info: #3c2313;
 $black-bg-par: #222222;
 $text-c-par: #f3f3f3;
 $text-c-header: #ffffff;
+$main-title-color: #3C2313;
+$cat-dog-footer-color:#F0A83E;
+$anchor-featured:#666666;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -107,6 +111,44 @@ main {
         padding: 1.6rem;
         text-decoration: none;
         text-transform: uppercase;
+      }
+    }
+  }
+  .featured-products{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1{
+      color:$bgc-btn-suscribe;
+      font-size:4rem;
+    }
+    margin-top:2rem;
+    nav>ul{
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      li{
+        list-style-type: none;
+        padding-right: 1rem;    
+        a{
+          text-decoration: none;
+        }
+        a:link,a:visited{
+          color:$anchor-featured;
+
+        }
+      }
+    }
+    .cards{
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3rem;
+      text-align: center;
+      .product{
+        p{
+          color:$cat-dog-footer-color;
+        }
       }
     }
   }

@@ -104,4 +104,40 @@ main .main-article .div-main-article .article-a {
   padding: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+main .featured-products {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+main .featured-products h1 {
+  color: #3c2313;
+  font-size: 4rem;
+}
+main .featured-products nav > ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+main .featured-products nav > ul li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+main .featured-products nav > ul li a {
+  text-decoration: none;
+}
+main .featured-products nav > ul li a:link, main .featured-products nav > ul li a:visited {
+  color: #666666;
+}
+main .featured-products .cards {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  text-align: center;
+}
+main .featured-products .cards .product p {
+  color: #F0A83E;
 }/*# sourceMappingURL=style.css.map */
