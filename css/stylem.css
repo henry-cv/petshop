@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Archivo para aplicar Estilos CSS Mobile First */
+:root {
+  --bgc-header1: #f0a83e;
+  --bgc-boton-reset: #8a8787;
+  --bgc-boton-suscribe: #3c2313;
+  --bgc-emoji-pin: #786960;
+  --black-par: #222222;
+  --text-c-par: #f3f3f3;
+  --text-white: #ffffff;
+  --anchor-feat:#666666;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-white);
+  font-family: "Roboto";
+  font-size: 1.6rem;
+}
+body .section-promo {
+  display: none;
+}
+
+header {
+  align-items: center;
+  background-color: var(--bgc-header1);
+  display: flex;
+  justify-content: space-evenly;
+  height: 6.2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+header #cat-dog {
+  align-items: center;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+header #cat-dog img {
+  display: block;
+}
+header #cat-dog span {
+  color: var(--bgc-boton-suscribe);
+}
+header .top-nav {
+  display: none;
+}/*# sourceMappingURL=stylem.css.map */
