@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* Archivo para aplicar Estilos CSS Mobile First */
-:root{
+:root {
   --bgc-header1: #f0a83e;
   --bgc-boton-reset: #8a8787;
   --bgc-boton-suscribe: #3c2313;
@@ -8,23 +8,25 @@
   --black-par: #222222;
   --text-c-par: #f3f3f3;
   --text-white: #ffffff;
-  --anchor-feat:#666666;
+  --anchor-feat: #666666;
 }
 $html-font-size: 62.5%;
 
-*, ::after,::before{
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
-html{
+html {
   font-size: $html-font-size;
 }
-body{
+body {
   color: var(--text-white);
   font-family: "Roboto";
   font-size: 1.6rem;
-  .section-promo{
+  .section-promo {
     display: none;
   }
 }
@@ -32,9 +34,9 @@ header {
   align-items: center;
   background-color: var(--bgc-header1);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 6.2rem;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
   #cat-dog {
     align-items: center;
@@ -48,49 +50,54 @@ header {
     }
     span {
       color: var(--bgc-boton-suscribe);
-    }    
+    }
   }
-  .top-nav{
-    display: none;    
+  .top-nav {
+    display: none;
   }
 }
-.main-article {
-  align-items: center;
-  background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: flex-end;
-  height: 44rem;
-  width: 100%;
-  .div-main-article {
+main {
+  .main-article {
     align-items: center;
+    background-image: url("../img/Full_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    height: 440px;
+    width: 414px;
 
-    .subtitle {
-      h2 {
-        background-color:var(--text-white);
+    .div-main-article {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .subtitle {
+        h2 {
+          background-color: var(--text-white);
+          border-radius: 1rem;
+          color: var(--bgc-boton-suscribe);
+          font-size: 2.5rem;
+          font-weight: 400;
+          height: 5.4rem;
+          padding: 2rem 1.5rem;
+        }
+        p {
+          color: var(--bgc-boton-suscribe);
+          font-size: 1.6rem;
+          padding: 1rem 0;
+          text-align: center;
+        }
+      }
+      .article-a {
+        background-color: var(--bgc-header1);
         border-radius: 1rem;
-        color: var(--bgc-boton-suscribe);
-        font-size: 3rem;
-        font-weight: 400;
-        padding: 2rem 1.5rem;
+        color: var(--text-white);
+        padding: 1.6rem;
+        text-decoration: none;
+        text-transform: uppercase;
       }
-      p {
-        color: $bgc-btn-suscribe;
-        font-size: 1.6rem;
-        padding: 1rem 0;
-        text-align: center;
-      }
-    }
-    .article-a {
-      background-color: $bgc-header;
-      color: $text-c-header;
-      padding: 1.6rem;
-      text-decoration: none;
-      text-transform: uppercase;
     }
   }
 }

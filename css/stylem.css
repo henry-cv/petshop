@@ -8,10 +8,12 @@
   --black-par: #222222;
   --text-c-par: #f3f3f3;
   --text-white: #ffffff;
-  --anchor-feat:#666666;
+  --anchor-feat: #666666;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,9 +36,9 @@ header {
   align-items: center;
   background-color: var(--bgc-header1);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 6.2rem;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
 }
 header #cat-dog {
@@ -55,4 +57,44 @@ header #cat-dog span {
 }
 header .top-nav {
   display: none;
+}
+
+main .main-article {
+  align-items: center;
+  background-image: url("../img/Full_1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  height: 440px;
+  width: 414px;
+}
+main .main-article .div-main-article {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main-article .div-main-article .subtitle h2 {
+  background-color: var(--text-white);
+  border-radius: 1rem;
+  color: var(--bgc-boton-suscribe);
+  font-size: 2.5rem;
+  font-weight: 400;
+  height: 5.4rem;
+  padding: 2rem 1.5rem;
+}
+main .main-article .div-main-article .subtitle p {
+  color: var(--bgc-boton-suscribe);
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+main .main-article .div-main-article .article-a {
+  background-color: var(--bgc-header1);
+  border-radius: 1rem;
+  color: var(--text-white);
+  padding: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }/*# sourceMappingURL=stylem.css.map */
