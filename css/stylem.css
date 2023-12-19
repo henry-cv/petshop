@@ -59,6 +59,9 @@ header .top-nav {
   display: none;
 }
 
+main {
+  width: 100%;
+}
 main .main-article {
   align-items: center;
   background-image: url("../img/Full_1.png");
@@ -97,4 +100,106 @@ main .main-article .div-main-article .article-a {
   padding: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+main .featured-products {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+main .featured-products h1 {
+  color: var(--bgc-boton-suscribe);
+  font-size: 4rem;
+  text-align: center;
+}
+main .featured-products nav {
+  margin-top: 3rem;
+}
+main .featured-products nav > ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+main .featured-products nav > ul li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+main .featured-products nav > ul li a {
+  text-decoration: none;
+}
+main .featured-products nav > ul li a:link,
+main .featured-products nav > ul li a:visited {
+  color: var(--anchor-feat);
+}
+main .featured-products .cards {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 2rem;
+  row-gap: 3rem;
+  text-align: center;
+}
+main .featured-products .cards .product h3 {
+  color: var(--bgc-boton-suscribe);
+}
+main .featured-products .cards .product p {
+  color: var(--bgc-header1);
+  font-size: 1.6rem;
+}
+main .section-contact {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 5rem;
+}
+main .section-contact > form {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 100%;
+}
+main .section-contact > form h3 {
+  color: var(--bgc-boton-suscribe);
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 2rem auto;
+}
+main .section-contact > form input {
+  background-color: var(--bgc-boton-suscribe);
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  width: 90%;
+}
+main .section-contact > form input,
+main .section-contact > form button {
+  border-radius: 1rem;
+  color: var(--text-white);
+}
+main .section-contact > form ::-moz-placeholder {
+  color: var(--text-white);
+}
+main .section-contact > form ::placeholder {
+  color: var(--text-white);
+}
+main .section-contact > form .buttons {
+  align-self: center;
+  border-radius: 2rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+main .section-contact > form .buttons #btn-reset {
+  background-color: var(--bgc-boton-reset);
+  font-size: 1.6rem;
+  padding: 0.8rem 1rem;
+}
+main .section-contact > form .buttons #in-send {
+  background-color: var(--bgc-header1);
+  font-size: 1.6rem;
 }/*# sourceMappingURL=stylem.css.map */
