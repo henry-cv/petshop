@@ -254,18 +254,18 @@ main {
     .topics {
       display: flex;
       flex-direction: column;
-      order:2;
+      order: 2;
       row-gap: 2rem;
       .topic {
         display: flex;
         align-items: center;
         column-gap: 1.5rem;
         -moz-column-gap: 1.5rem;
-        img{
+        img {
           background-color: var(--bgc-emoji-pin);
           border-radius: 50%;
           display: block;
-          width:6.6rem;
+          width: 6.6rem;
         }
         .info-item {
           align-items: flex-start;
@@ -273,27 +273,34 @@ main {
           flex-direction: column;
           justify-content: space-around;
           row-gap: 1rem;
-          h4{
+          h4 {
             font-size: 2rem;
           }
         }
       }
     }
-    #bottom-cat-dog{
+    #bottom-cat-dog {
       color: var(--bgc-header1);
       font-size: 2rem;
       font-weight: 700;
       order: 1;
       padding: 2rem 0;
-      .btm-cat-dog{
+      .btm-cat-dog {
         color: var(--text-white);
       }
-    }    
+    }
   }
 }
-footer{
-  background-color:var(--black-par);
-  color:var(--text-white);
+footer {
+  background-color: var(--black-par);
+  color: var(--text-white);
   font-size: 1.3rem;
   text-align: center;
+}
+/* Líneas para agregar las queries */
+@media screen and (min-width: 415px) {
+  main .main-article {
+    background-size: cover;
+    width: 100%;
+  }
 }
