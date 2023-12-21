@@ -2,3 +2,9 @@ css/*.css
 css/*.map
 *.css
 *.map
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+#obtenido de 
