@@ -140,8 +140,9 @@ main .featured-products .cards {
   row-gap: 3rem;
   text-align: center;
 }
-main .featured-products .cards .product h3 {
+main .featured-products .cards .product figcaption {
   color: var(--bgc-boton-suscribe);
+  font-weight: 700;
 }
 main .featured-products .cards .product p {
   color: var(--bgc-header1);
@@ -303,10 +304,43 @@ footer {
 }
 
 /* Líneas para agregar las queries */
-/* Aún probando primera query responsive */
+/* Aún probando primera query responsive 415px*/
 @media screen and (min-width: 415px) {
   main .main-article {
     background-size: cover;
     width: 100%;
+  }
+  .featured-products nav {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .featured-products .cards > .product:hover {
+    transform: scale(1.2);
+    transition: 800ms all;
+  }
+}
+/* Aún probando primera query responsive 650px*/
+@media screen and (min-width: 650px) {
+  header .hamburguer {
+    display: none;
+  }
+  header .top-nav {
+    display: block;
+  }
+  header .top-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .top-nav ul li {
+    list-style-type: none;
+    padding-right: 2rem;
+  }
+  header .top-nav ul li a {
+    color: var(--text-white);
+    text-decoration: none;
+  }
+  header .top-nav ul li a:link,
+  header .top-nav ul li a:visited {
+    color: var(--text-white);
   }
 }/*# sourceMappingURL=stylem.css.map */

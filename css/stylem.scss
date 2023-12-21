@@ -137,8 +137,9 @@ main {
       row-gap: 3rem;
       text-align: center;
       .product {
-        h3 {
+        figcaption {
           color: var(--bgc-boton-suscribe);
+          font-weight: 700;
         }
         p {
           color: var(--bgc-header1);
@@ -298,10 +299,50 @@ footer {
   text-align: center;
 }
 /* Líneas para agregar las queries */
-/* Aún probando primera query responsive */
+/* Aún probando primera query responsive 415px*/
 @media screen and (min-width: 415px) {
   main .main-article {
     background-size: cover;
     width: 100%;
   }
+  .featured-products{
+    nav{
+      margin-bottom:3rem;
+      margin-top:3rem;
+    }
+    .cards > .product:hover{    
+      transform: scale(1.2);
+      transition: 800ms all;    
+    }
+  }  
+}
+/* Aún probando primera query responsive 650px*/
+@media screen and (min-width: 650px){
+  
+  header{
+    .hamburguer{
+      display: none;
+    }
+    .top-nav{
+      display: block;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          list-style-type: none;
+          padding-right: 2rem;
+          a {
+            color: var(--text-white);
+            text-decoration: none;
+          }
+          a:link,
+          a:visited {
+            color: var(--text-white);
+          }
+        }
+      }
+    }
+    
+  } 
+  
 }
