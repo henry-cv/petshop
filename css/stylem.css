@@ -159,7 +159,7 @@ main .section-contact > form {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 26rem;
+  height: auto;
   justify-content: center;
   row-gap: 1rem;
   width: 100%;
@@ -173,6 +173,7 @@ main .section-contact > form h3 {
 main .section-contact > form input {
   background-color: var(--bgc-boton-suscribe);
   font-size: 1rem;
+  height: 4rem;
   padding: 0.8rem 1rem;
   width: 90%;
 }
@@ -342,5 +343,25 @@ footer {
   header .top-nav ul li a:link,
   header .top-nav ul li a:visited {
     color: var(--text-white);
+  }
+  main {
+    width: 100%;
+  }
+  main .featured-products .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .section-contact > form {
+    width: 90%;
+  }
+  main .sec-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10rem;
+    row-gap: 2rem;
+  }
+  main .sec-news form {
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=stylem.css.map */
