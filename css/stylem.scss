@@ -280,11 +280,13 @@ main {
         }
       }
     }
+    .logo-bottom{
+      order:1;
+    }
     #bottom-cat-dog {
       color: var(--bgc-header1);
       font-size: 2rem;
-      font-weight: 700;
-      order: 1;
+      font-weight: 700;     
       padding: 2rem 0;
       .btm-cat-dog {
         color: var(--text-white);

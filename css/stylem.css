@@ -286,11 +286,13 @@ main .information .topics .topic .info-item {
 main .information .topics .topic .info-item h4 {
   font-size: 2rem;
 }
+main .information .logo-bottom {
+  order: 1;
+}
 main .information #bottom-cat-dog {
   color: var(--bgc-header1);
   font-size: 2rem;
   font-weight: 700;
-  order: 1;
   padding: 2rem 0;
 }
 main .information #bottom-cat-dog .btm-cat-dog {
