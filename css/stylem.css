@@ -358,10 +358,19 @@ footer {
   main .sec-news {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 10rem;
+    height: auto;
     row-gap: 2rem;
   }
   main .sec-news form {
     justify-content: space-evenly;
+  }
+  main .information {
+    flex-direction: row;
+  }
+  main .information .topics {
+    order: 1;
+  }
+  main .information .logo-bottom {
+    order: 2;
   }
 }/*# sourceMappingURL=stylem.css.map */
