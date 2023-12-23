@@ -349,6 +349,19 @@ footer {
   main {
     width: 100%;
   }
+  main .main-article {
+    justify-content: flex-end;
+  }
+  main .main-article .div-main-article {
+    align-items: flex-end;
+    padding-right: 2rem;
+  }
+  main .main-article .div-main-article .subtitle p {
+    text-align: right;
+  }
+  main .main-article .div-main-article .article-a {
+    margin-right: 2rem;
+  }
   main .featured-products .cards {
     display: flex;
     flex-wrap: wrap;
@@ -374,5 +387,10 @@ footer {
   }
   main .information .logo-bottom {
     order: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .main-article {
+    background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
   }
 }/*# sourceMappingURL=stylem.css.map */
