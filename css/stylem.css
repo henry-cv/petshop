@@ -159,7 +159,7 @@ main .section-contact > form {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 26rem;
+  height: auto;
   justify-content: center;
   row-gap: 1rem;
   width: 100%;
@@ -173,6 +173,7 @@ main .section-contact > form h3 {
 main .section-contact > form input {
   background-color: var(--bgc-boton-suscribe);
   font-size: 1rem;
+  height: 4rem;
   padding: 0.8rem 1rem;
   width: 90%;
 }
@@ -285,11 +286,13 @@ main .information .topics .topic .info-item {
 main .information .topics .topic .info-item h4 {
   font-size: 2rem;
 }
+main .information .logo-bottom {
+  order: 1;
+}
 main .information #bottom-cat-dog {
   color: var(--bgc-header1);
   font-size: 2rem;
   font-weight: 700;
-  order: 1;
   padding: 2rem 0;
 }
 main .information #bottom-cat-dog .btm-cat-dog {
@@ -342,5 +345,52 @@ footer {
   header .top-nav ul li a:link,
   header .top-nav ul li a:visited {
     color: var(--text-white);
+  }
+  main {
+    width: 100%;
+  }
+  main .main-article {
+    justify-content: flex-end;
+  }
+  main .main-article .div-main-article {
+    align-items: flex-end;
+    padding-right: 2rem;
+  }
+  main .main-article .div-main-article .subtitle p {
+    text-align: right;
+  }
+  main .main-article .div-main-article .article-a {
+    margin-right: 2rem;
+  }
+  main .featured-products .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .section-contact > form {
+    width: 90%;
+  }
+  main .sec-news {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    row-gap: 2rem;
+  }
+  main .sec-news form {
+    justify-content: space-evenly;
+  }
+  main .information {
+    flex-direction: row;
+  }
+  main .information .topics {
+    order: 1;
+  }
+  main .information .logo-bottom {
+    order: 2;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-article {
+    background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
   }
 }/*# sourceMappingURL=stylem.css.map */
