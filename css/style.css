@@ -1,9 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* En este caso a partir de un diseño Mobile First */
+<<<<<<< HEAD
 /* $fondo-btn-sign: #03faee;
 $fondo-article: #f9f9f8;
 $primer-parrafo: #8b8fa5; */
+=======
+>>>>>>> mobile
 /* Agregados por mi*/
 *, ::after, ::before {
   box-sizing: border-box;
@@ -226,8 +229,15 @@ main .sec-news h4 {
 main .sec-news form > input {
   border-style: none;
   border-radius: 1.6rem;
+<<<<<<< HEAD
   font-size: 1rem;
   padding: 1.5rem 0.8rem;
+=======
+  font-size: 1.4rem;
+  height: 4rem;
+  padding: 1.5rem 0.8rem;
+  width: 27rem;
+>>>>>>> mobile
 }
 main .sec-news input[type=submit] {
   background-color: #3c2313;

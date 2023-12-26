@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* En este caso a partir de un diseño Mobile First */
 $html-font-size: 62.5%;
+<<<<<<< HEAD
 /* $fondo-btn-sign: #03faee;
 $fondo-article: #f9f9f8;
 $primer-parrafo: #8b8fa5; */
+=======
+>>>>>>> mobile
 
 /* Agregados por mi*/
 $bgc-header: #f0a83e;
@@ -232,8 +235,15 @@ main {
     form > input {
       border-style: none;
       border-radius: 1.6rem;
+<<<<<<< HEAD
       font-size: 1rem;
       padding: 1.5rem 0.8rem;
+=======
+      font-size: 1.4rem;
+      height: 4rem;
+      padding: 1.5rem 0.8rem;
+      width:27rem;
+>>>>>>> mobile
     }
     input[type="submit"] {
       background-color: $bgc-btn-suscribe;
@@ -280,7 +290,11 @@ main {
       .btm-cat-dog{
         color:$text-c-header;
       }
+<<<<<<< HEAD
     }
     
+=======
+    }    
+>>>>>>> mobile
   }
 }
